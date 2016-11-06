@@ -3,6 +3,7 @@ package edu.csumb.tohernandez.averagecalculator;
 import java.text.DecimalFormat;
 
 import android.app.ActionBar;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -77,18 +78,25 @@ public class mainCalulatorActivity extends AppCompatActivity implements OnClickL
 
         if(averageScore <= 100 && averageScore >= 90){
             gradeLetter = "A";
+            gradeTextView.setTextColor(Color.GREEN);
         } else if(averageScore < 90 && averageScore >= 87){
             gradeLetter = "B+";
+            gradeTextView.setTextColor(Color.GREEN);
         }else if(averageScore < 87 && averageScore >= 83){
             gradeLetter = "B";
+            gradeTextView.setTextColor(Color.BLUE);
         } else if(averageScore < 83 && averageScore >= 80){
             gradeLetter = "B-";
+            gradeTextView.setTextColor(Color.BLUE);
         }else if(averageScore <= 80 && averageScore >= 70){
             gradeLetter = "C";
+            gradeTextView.setTextColor(Color.rgb(255,165,0));
         }else if(averageScore <= 70 && averageScore >= 60){
             gradeLetter = "D";
+            gradeTextView.setTextColor(Color.RED);
         }else {
             gradeLetter = "F";
+            gradeTextView.setTextColor(Color.RED);
         }
         gradeTextView.setText(gradeLetter);
         Toast t = Toast.makeText(this, "Grade: " + gradeLetter , Toast.LENGTH_SHORT);
