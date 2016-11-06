@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Average Calculator</string>
+    <string name="hypen">-</string>
+    <string name="scoreTwoLabel">Score 2:</string>
+    <string name="scoreOneLabel">Score 1:</string>
+    <string name="calculate">Calculate</string>
+    <string name="letterGradeLabel">Letter Grade</string>
+    <string name="averageScoreLabel">Average Score</string>
+</resources>

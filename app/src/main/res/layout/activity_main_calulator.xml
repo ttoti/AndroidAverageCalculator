@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_calulator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.csumb.tohernandez.averagecalculator.mainCalulatorActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/scoreOneText"
+        android:layout_alignTop="@+id/scoreOneLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calculateButton"
+        android:textSize="12sp"
+        android:typeface="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:text="@string/scoreTwoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scoreTwoLabel"
+        android:textSize="32sp"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/scoreOneLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/scoreTwoText"
+        android:layout_alignTop="@+id/scoreTwoLabel"
+        android:layout_below="@+id/scoreOneText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/hypen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/letterLabel"
+        android:textSize="36sp"
+        android:layout_marginRight="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_below="@+id/averageScoreLabel"
+        android:layout_alignRight="@+id/letterGradeLabel"
+        android:layout_alignEnd="@+id/letterGradeLabel" />
+
+    <TextView
+        android:text="@string/scoreOneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scoreOneLabel"
+        android:textSize="32sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/averageScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/averageScoreLabel"
+        android:layout_below="@+id/scoreTwoText"
+        android:layout_toRightOf="@+id/calculateButton"
+        android:layout_toEndOf="@+id/calculateButton"
+        android:layout_marginTop="37dp" />
+
+    <TextView
+        android:text="@string/letterGradeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/letterGradeLabel"
+        android:layout_alignBaseline="@+id/averageScoreLabel"
+        android:layout_alignBottom="@+id/averageScoreLabel"
+        android:layout_alignRight="@+id/scoreTwoLabel"
+        android:layout_alignEnd="@+id/scoreTwoLabel"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
+
+    <TextView
+        android:text="@string/hypen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scoreLabel"
+        android:textSize="36sp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/averageScoreLabel"
+        android:layout_alignLeft="@+id/averageScoreLabel"
+        android:layout_alignStart="@+id/averageScoreLabel" />
+
+</RelativeLayout>
